@@ -41,44 +41,44 @@ end
 
 
 def render_country( country, opts={} )
-  tmpl = TextUtils::PageTemplate.read( 'templates/country.md' )
+  tmpl = TextUtils::PageTemplate.read( 'country.md' )
   quickfix_concat_lines( tmpl.render( binding ) )
 end
 
 def render_country_mini( country, opts={} )
-  tmpl = TextUtils::PageTemplate.read( 'templates/country-mini.md' )
+  tmpl = TextUtils::PageTemplate.read( 'country-mini.md' )
   quickfix_concat_lines( tmpl.render( binding ) )
 end
 
 def render_country_stats( country, opts={} )
-  tmpl = TextUtils::PageTemplate.read( 'templates/country-stats.md' )
+  tmpl = TextUtils::PageTemplate.read( 'country-stats.md' )
   quickfix_concat_lines( tmpl.render( binding ) )
 end
 
 
 def render_toc( opts={} )
-  tmpl = File.read_utf8( 'templates/toc.md' )
+  tmpl = File.read_utf8( 'toc.md' )
   render_erb_template( tmpl, binding )
 end
 
 def render_whats_news_in_year( year, opts={} )
-  tmpl = File.read_utf8( 'templates/whats-news-in-year.md' )
+  tmpl = File.read_utf8( 'whats-news-in-year.md' )
   render_erb_template( tmpl, binding )
 end
 
 
 def render_breweries_idx( opts={} )
-  tmpl = TextUtils::PageTemplate.read( 'templates/breweries-idx.md' )
+  tmpl = TextUtils::PageTemplate.read( 'breweries-idx.md' )
   quickfix_concat_lines( tmpl.render( binding ) )
 end
 
 
 def render_beers_idx( opts={} )
-  tmpl = File.read_utf8( 'templates/beers-idx.md' )
+  tmpl = File.read_utf8( 'beers-idx.md' )
   render_erb_template( tmpl, binding )
 end
 
 def render_brands_idx( opts={} )
-  tmpl = File.read_utf8( 'templates/brands-idx.md' )
+  tmpl = File.read_utf8( 'brands-idx.md' )
   render_erb_template( tmpl, binding )
 end
