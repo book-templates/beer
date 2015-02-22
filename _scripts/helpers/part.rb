@@ -70,39 +70,39 @@ end
 
 
 def render_city( city, opts={} )
-  tmpl       = File.read_utf8( '_includes/_city.md' )
+  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_city.md" )
   render_erb_template( tmpl, binding )
 end
 
 
 
 def render_brewery( brewery, opts={} )
-  tmpl       = File.read_utf8( '_includes/_brewery.md' )
+  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_brewery.md" )
   render_erb_template( tmpl, binding )
 end
 
 def render_brewery_mini( brewery, opts={} )
-  tmpl       = File.read_utf8( '_includes/_brewery-mini.md' )
+  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_brewery-mini.md" )
   render_erb_template( tmpl, binding )
 end
 
 def render_brewery_idx( brewery, opts={} )
-  tmpl       = File.read_utf8( '_includes/_brewery-idx.md' )
+  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_brewery-idx.md" )
   render_erb_template( tmpl, binding )
 end
 
 def render_beer( beer, opts={} )
-  tmpl       = File.read_utf8( '_includes/_beer.md' )
+  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_beer.md" )
   render_erb_template( tmpl, binding )
 end
 
 def render_beer_idx( beer, opts={} )
-  tmpl       = File.read_utf8( '_includes/_beer-idx.md' )
+  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_beer-idx.md" )
   render_erb_template( tmpl, binding )
 end
 
 def render_brand_idx( brand, opts={} )
-  tmpl       = File.read_utf8( '_includes/_brand-idx.md' )
+  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_brand-idx.md" )
   render_erb_template( tmpl, binding )
 end
 

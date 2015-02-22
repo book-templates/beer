@@ -1,8 +1,10 @@
 #############
 # settings
 
-BUILD_DIR = "./build"
-PAGES_DIR = "#{BUILD_DIR}/pages"  # use PAGES_OUTPUT_DIR or PAGES_ROOT ??
+BUILD_DIR     = "./build"
+PAGES_DIR     = "#{BUILD_DIR}/pages"  # use PAGES_OUTPUT_DIR or PAGES_ROOT ??
+TEMPLATES_DIR = "./_templates"
+
 
 DB_CONFIG = {
   adapter:  'sqlite3',
@@ -11,7 +13,7 @@ DB_CONFIG = {
 
 
 # stdlibs
-require 'yaml'
+require 'yaml'  # todo/check - already required in worlddb???
 require 'erb'
 require 'pp'
 
