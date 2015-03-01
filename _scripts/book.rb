@@ -16,6 +16,9 @@ require_relative 'helpers/page'
 
 require_relative 'utils'
 
+## quick fix/hack for settings globals; fix: use config hash etc.
+PAGES_DIR     = $pages_dir      if defined?( $pages_dir )
+TEMPLATES_DIR = $templates_dir  if defined?( $templates_dir )
 
 
 puts '[book] Welcome'
