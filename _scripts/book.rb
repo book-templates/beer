@@ -55,9 +55,7 @@ def build_book_for_country( country_code, opts={} )
   
   puts "build country page #{country.key}..."
 
-  ###
-  ### fix: use country.to_path  -- check why not used/working ?????
-  path = country_to_path( country )
+  path = country.to_path
   puts "path=#{path}"
   b.page( path,   title: "#{country.title} (#{country.code})",
                   id:    "#{country.key}" ) do |page|
@@ -138,9 +136,7 @@ Country.order(:id).each do |country|
   country_count += 1
   puts "build country page #{country.key}..."
 
-  ###
-  ### fix: use country.to_path  -- check why not used/working ?????
-  path = country_to_path( country )
+  path = country.to_path
   puts "path=#{path}"
   b.page( path, title: "#{country.title} (#{country.code})",
                 id:    "#{country.key}" ) do |page|
