@@ -1,6 +1,9 @@
 ###########################
 # markdown helpers
 
+##### todo/fix:
+## check already included in hybookhelper
+##   remove here
 
 def link_to( title, link )
   "[#{title}](#{link})"

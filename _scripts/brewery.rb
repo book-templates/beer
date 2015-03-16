@@ -1,5 +1,6 @@
 # encoding: utf-8
 
+module HybookHelper
 
 def brewery_stars( brewery )
   buf = ''
@@ -57,3 +58,5 @@ def brewery_tags( brewery, opts={} )
   buf
 end
 
+
+end # module HybookHelper

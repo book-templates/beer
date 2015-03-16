@@ -3,6 +3,7 @@
 ##########################
 # part helpers
 
+module HybookHelper
 
 #####
 # todo: find a better name for ender_toc_countries ??
@@ -106,3 +107,4 @@ def render_brand_idx( brand, opts={} )
   render_erb_template( tmpl, binding )
 end
 
+end # module HybookHelper

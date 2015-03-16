@@ -1,6 +1,7 @@
 ###############################
 # link helpers
 
+module HybookHelper
 
 def link_to_country( country, opts={} )
   if opts[:inline].nil?
@@ -23,4 +24,6 @@ def link_to_brewery( brewery, opts={} )
     link_to "#{brewery.title}", "##{brewery.key}"
   end
 end
+
+end # module HybookHelper
 

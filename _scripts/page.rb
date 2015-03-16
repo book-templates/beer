@@ -3,7 +3,8 @@
 ##########################
 # page helpers
 
-
+module HybookHelper
+  
 ### todo: check why it is not working in PageTemplate ??
 
 def quickfix_concat_lines( text )
@@ -83,3 +84,4 @@ def render_brands_idx( opts={} )
   render_erb_template( tmpl, binding )
 end
 
+end # module HybookHelper

@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+module HybookHelper
+
 def city_breweries_count( city )
   buf = ''
   buf << "_(#{ city.breweries.count })_{:.count}"   if city.breweries.count > 1
@@ -18,4 +20,4 @@ def city_pop( city )
   buf
 end
 
-
+end # module HybookHelper

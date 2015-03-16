@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+module HybookHelper
+
 
 def beer_facts( beer )   # rename to facts_for_beer() ???
   buf = ''
@@ -25,3 +27,5 @@ def beer_tags( beer, opts={} )   # rename to tags_for_beer or tags_beer ??
   end
   buf
 end
+
+end # module HybookHelper
