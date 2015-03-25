@@ -71,40 +71,46 @@ end
 
 
 def render_city( city, opts={} )
-  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_city.md" )
-  render_erb_template( tmpl, binding )
+  render 'includes/_city', opts, city: city
+  ## tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_city.md" )
+  ## render_erb_template( tmpl, binding )
 end
 
-
-
 def render_brewery( brewery, opts={} )
-  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_brewery.md" )
-  render_erb_template( tmpl, binding )
+  render 'includes/_brewery', opts, brewery: brewery
+  ## tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_brewery.md" )
+  ## render_erb_template( tmpl, binding )
 end
 
 def render_brewery_mini( brewery, opts={} )
-  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_brewery-mini.md" )
-  render_erb_template( tmpl, binding )
+  render 'includes/_brewery-mini', opts, brewery: brewery
+  ## tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_brewery-mini.md" )
+  ## render_erb_template( tmpl, binding )
 end
 
 def render_brewery_idx( brewery, opts={} )
-  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_brewery-idx.md" )
-  render_erb_template( tmpl, binding )
+  render 'includes/_brewery-idx', opts, brewery: brewery
+  ## tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_brewery-idx.md" )
+  ## render_erb_template( tmpl, binding )
 end
 
 def render_beer( beer, opts={} )
-  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_beer.md" )
-  render_erb_template( tmpl, binding )
+  render 'includes/_beer', opts, beer: beer
+  ## tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_beer.md" )
+  ## render_erb_template( tmpl, binding )
 end
 
 def render_beer_idx( beer, opts={} )
-  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_beer-idx.md" )
-  render_erb_template( tmpl, binding )
+  render 'includes/_beer-idx', opts, beer: beer
+  ## tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_beer-idx.md" )
+  ## render_erb_template( tmpl, binding )
 end
 
 def render_brand_idx( brand, opts={} )
-  tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_brand-idx.md" )
-  render_erb_template( tmpl, binding )
+  render 'includes/_brand-idx', opts, brand: brand
+  ## tmpl       = File.read_utf8( "#{TEMPLATES_DIR}/includes/_brand-idx.md" )
+  ## render_erb_template( tmpl, binding )
 end
+
 
 end # module HybookHelper
